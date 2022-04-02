@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "scrollmagic": "^2.0.8",
+    "scrollscene": "^0.0.24"
+  }
+}
