@@ -39,13 +39,23 @@
 
 
         /* Body */
+        html {
+            overflow: hidden;
+        }
 
         body {
+
+            overflow: hidden;
             background-color: black;
             color: white;
             margin: 0;
             padding: 0;
             border: 0;
+
+        }
+
+        div.container {
+            max-height: 100vh;
             overflow-y: scroll;
             scroll-snap-type: y mandatory;
         }
@@ -120,6 +130,8 @@
         }
 
         .monsterpic {
+            opacity: 0;
+            transition: 1s;
             position: absolute;
             width: 100px;
             height: 100px;
@@ -150,47 +162,57 @@
         #five .monsterpic {
             background-image: url('https://v1.padlet.pics/1/image.webp?t=c_limit%2Cdpr_1%2Ch_964%2Cw_1920&url=https%3A%2F%2Fpadlet-uploads.storage.googleapis.com%2F1647038629%2Fa714b1615d833dfd1cb8634295326511%2F9EBE13C3_C7F6_49E5_BFB9_CC1BBAE95161.jpeg')
         }
+
+        .number:hover .monsterpic {
+            opacity: 1;
+            transition: 1s;
+        }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
 </head>
 
 <body>
-    <div class="fullheight" id="header">
-        <h1 class="title headline-text">Our Monsters</h1>
-        <h2 class="subtitle body-text">A digital lookbook</h2>
-        <h3 class="subtitle body-text">Unit X Group 12<br>2022</h3>
+    <div class="container">
+        <div class="fullheight" id="header">
+            <h1 class="title headline-text">Our Monsters</h1>
+            <h2 class="subtitle body-text">A digital lookbook</h2>
+            <h3 class="subtitle body-text">Unit X Group 12<br>2022</h3>
 
-    </div>
-    <div class="fullheight" id="about">
-        <div class="content">
-            <h1 class="title headline-text">About this project</h1>
-            <p class="placeholder-text lipsum"></p>
+        </div>
+        <div class="fullheight" id="about">
+            <div class="content">
+                <h1 class="title headline-text">About this project</h1>
+                <p class="placeholder-text lipsum"></p>
+            </div>
+        </div>
+        <div class="fullheight" id="count">
+            <div class="number" id="one">
+                <span class="bignum">1</span>
+                <div class="monsterpic"></div>
+                <div class="monsterinfo"><span class="monstername">Freya</span><span class="monstertopic"></span></div>
+            </div>
+            <div class="number" id="two">
+                <span class="bignum">2</span>
+                <div class="monsterpic"></div>
+            </div>
+            <div class="number" id="three">
+                <span class="bignum">3</span>
+                <div class="monsterpic"></div>
+            </div>
+            <div class="number" id="four">
+                <span class="bignum">4</span>
+                <div class="monsterpic"></div>
+            </div>
+            <div class="number" id="five">
+                <span class="bignum">5</span>
+                <div class="monsterpic"></div>
+            </div>
         </div>
     </div>
-    <div class="fullheight" id="count">
-        <div class="number" id="one">
-            <span class="bignum">1</span>
-            <div class="monsterpic"></div>
-        </div>
-        <div class="number" id="two">
-            <span class="bignum">2</span>
-            <div class="monsterpic"></div>
-        </div>
-        <div class="number" id="three">
-            <span class="bignum">3</span>
-            <div class="monsterpic"></div>
-        </div>
-        <div class="number" id="four">
-            <span class="bignum">4</span>
-            <div class="monsterpic"></div>
-        </div>
-        <div class="number" id="five">
-            <span class="bignum">5</span>
-            <div class="monsterpic"></div>
-        </div>
-    </div>
+
 
 </body>
 <script>
@@ -224,6 +246,8 @@
         y: -30,
         duration: 2
     })
+
+
 </script>
 
 </html>
