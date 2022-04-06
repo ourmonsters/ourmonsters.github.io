@@ -186,6 +186,34 @@
             width: auto;
 
         }
+
+        .halfandhalf {
+            background-color: white;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            padding: 0px 0px !important;
+        }
+
+        .halfandhalf div {
+            height: 100vh;
+            width: 50%;
+        }
+
+        .halfandhalf#tiki .left {
+            background-image: url('model1.jpeg');
+            background-size: 50%;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .halfandhalf#tiki .right {
+            background-image: url('model2.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/ScrollTrigger.min.js"></script>
@@ -251,6 +279,12 @@
             <video
                 src="https://padlet-uploads.storage.googleapis.com/1357199379/05c57ce5c786523c1a6cae5df7d86fce/sample.mp4"
                 autoplay controls></video>
+
+        </div>
+        <div class="fullheight halfandhalf" id="tiki">
+            <div class="left">&nbsp;</div>
+
+            <div class="right">&nbsp;</div>
 
         </div>
     </div>
