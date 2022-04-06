@@ -11,18 +11,31 @@
         @import url('https://fonts.googleapis.com/css2?family=Flow+Block&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Plaster&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+        @font-face {
+            font-family: 'Raymond Signature';
+            src: url('RaymondSignatureRegular.woff2') format('woff2'),
+                url('RaymondSignatureRegular.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
 
         .placeholder-text {
             font-family: 'Flow Block', cursive;
-            opacity: 0.7;
+            opacity: 1;
+            font-weight: 300;
         }
 
         .headline-text {
-            font-family: 'Plaster', cursive;
+            font-family: 'Raymond Signature', sans-serif;
         }
 
         .body-text {
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.2rem;
         }
 
         /* Colours and lipsum */
@@ -167,6 +180,12 @@
             opacity: 1;
             transition: 1s;
         }
+
+        #bts video {
+            height: 100vh;
+            width: auto;
+
+        }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/ScrollTrigger.min.js"></script>
@@ -184,8 +203,25 @@
         </div>
         <div class="fullheight" id="about">
             <div class="content">
-                <h1 class="title headline-text">About this project</h1>
-                <p class="placeholder-text lipsum"></p>
+                <h1 class="title headline-text">Unit X 2022</h1>
+                <p class="body-text" style="display:none;">
+                    Inspired by Bruce Asbestos' passion for using bright colours, we've created a series of looks
+                    featuring 'our monsters', five figurative characters representing issues we each confront in our
+                    life.
+                </p>
+                <p class="body-text" style="display:none;">
+                    Working across the disciplines of Graphic Design and Fashion Art Direction, we explored the theme of
+                    monsters to produce outfits, which are collected into this digital lookbook and accompanying
+                    behind-the-scenes film.
+
+
+                </p>
+                <p class="body-text">Both Graphic Design & Fashion Art Direction students came together for Unit X to
+                    metaphorically explore their own
+                    individual "monsters" heavily inspired by Bruce Asbestos' use of colors. A cross-disciplinary
+                    collaboration and behind
+                    the scene expressed in a chaotic sense with no limitation on the project. 
+                </p>
             </div>
         </div>
         <div class="fullheight" id="count">
@@ -210,6 +246,12 @@
                 <span class="bignum">5</span>
                 <div class="monsterpic"></div>
             </div>
+        </div>
+        <div class="fullheight" id="bts">
+            <video
+                src="https://padlet-uploads.storage.googleapis.com/1357199379/05c57ce5c786523c1a6cae5df7d86fce/sample.mp4"
+                autoplay controls></video>
+
         </div>
     </div>
 
