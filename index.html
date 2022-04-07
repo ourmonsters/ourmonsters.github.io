@@ -8,20 +8,19 @@
     <title>Our Monsters</title>
     <style>
         /* Fonts */
-        @import url('https://fonts.googleapis.com/css2?family=Flow+Block&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Plaster&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
         @font-face {
-            font-family: 'Raymond Signature';
-            src: url('RaymondSignatureRegular.woff2') format('woff2'),
-                url('RaymondSignatureRegular.woff') format('woff');
+            font-family: 'Better Together';
+            src: url('BetterTogether-Caps.woff2') format('woff2'),
+                url('BetterTogether-Caps.woff') format('woff');
             font-weight: normal;
             font-style: normal;
             font-display: swap;
         }
+
+
 
         .placeholder-text {
             font-family: 'Flow Block', cursive;
@@ -30,7 +29,7 @@
         }
 
         .headline-text {
-            font-family: 'Raymond Signature', sans-serif;
+            font-family: 'Better Together', sans-serif;
         }
 
         .body-text {
@@ -85,6 +84,7 @@
         }
 
         /* Sections */
+        /* Header */
 
         div#header {
             flex-direction: column;
@@ -95,12 +95,15 @@
 
         .title {
             opacity: 0;
+            font-size: 3rem;
         }
 
         .subtitle {
             opacity: 0;
             text-align: center;
         }
+
+        /* About */
 
         div#about {
             background-color: var(--bruce-green);
@@ -181,11 +184,15 @@
             transition: 1s;
         }
 
+        /* video */
+
         #bts video {
             height: 100vh;
             width: auto;
 
         }
+
+        /*Half and halfs*/
 
         .halfandhalf {
             background-color: white;
@@ -197,22 +204,142 @@
             padding: 0px 0px !important;
         }
 
-        .halfandhalf div {
+        .halfandhalf div.left,
+        .halfandhalf div.right {
             height: 100vh;
             width: 50%;
         }
 
-        .halfandhalf#tiki .left {
-            background-image: url('model1.jpeg');
+        /* Fifty */
+        .halfandhalf .fifty {
             background-size: 50%;
             background-position: center;
             background-repeat: no-repeat;
         }
 
-        .halfandhalf#tiki .right {
-            background-image: url('model2.jpeg');
+        /* Sixty */
+        .halfandhalf .sixty {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .halfandhalf .sixty .image {
+            width: 60%;
+            height: 60%;
             background-size: cover;
             background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .halfandhalf .sixty .image.notext {
+            margin-bottom: calc(15% + 20px);
+        }
+
+        .supplement {
+            height: 15%;
+            max-height: 15%;
+            padding-top: 20px;
+            color: black;
+            z-index: 4;
+            text-align: right;
+            font-family: 'Open Sans';
+        }
+
+        .sixty .supplement {
+            max-width: calc(60% - 100px);
+            padding-left: 100px;
+        }
+
+
+        .supplement .topline {
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* Whole */
+        .halfandhalf .whole {
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Fives */
+        .five {
+            color: black;
+            background-color: white;
+            padding: 0px 0px !important;
+            margin: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            align-items: center;
+            align-content: center;
+        }
+
+        .five .image {
+            height: 100%;
+            margin: 2%;
+            text-align: center;
+            aspect-ratio: calc(3/4);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .image.five-third {
+            flex-grow: 6;
+        }
+
+        .image.five-second,
+        .image.five-fourth {
+            flex-grow: 4;
+        }
+
+        .image.five-first,
+        .image.five-fifth {
+            flex-grow: 3;
+            margin-bottom: 12%;
+        }
+
+        /* Individual halfs */
+        .halfandhalf#tiki .left {
+            background-image: url('model1.jpeg');
+
+        }
+
+        .halfandhalf#tiki .right {
+            background-image: url('model2.jpeg');
+        }
+
+        .halfandhalf#moremore .left .image {
+            background-image: url('model1.jpeg');
+        }
+
+        .halfandhalf#moremore .right .image {
+            background-image: url('model2.jpeg');
+        }
+
+        .five#bernard .image.five-first {
+            background-image: url('model1.jpeg');
+        }
+
+        .five#bernard .image.five-second {
+            background-image: url('model2.jpeg');
+        }
+
+        .five#bernard .image.five-third {
+            background-image: url('model1.jpeg');
+        }
+
+        .five#bernard .image.five-fourth {
+            background-image: url('model2.jpeg');
+        }
+
+        .five#bernard .image.five-fifth {
+            background-image: url('model1.jpeg');
         }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
@@ -224,7 +351,7 @@
 <body>
     <div class="container">
         <div class="fullheight" id="header">
-            <h1 class="title headline-text">Our Monsters</h1>
+            <h1 class="title headline-text">Terrors</h1>
             <h2 class="subtitle body-text">A digital lookbook</h2>
             <h3 class="subtitle body-text">Unit X Group 12<br>2022</h3>
 
@@ -256,7 +383,7 @@
             <div class="number" id="one">
                 <span class="bignum">1</span>
                 <div class="monsterpic"></div>
-                <div class="monsterinfo"><span class="monstername">Freya</span><span class="monstertopic"></span></div>
+                <div class="monsterinfo"><span class="monstername"></span><span class="monstertopic"></span></div>
             </div>
             <div class="number" id="two">
                 <span class="bignum">2</span>
@@ -282,10 +409,32 @@
 
         </div>
         <div class="fullheight halfandhalf" id="tiki">
-            <div class="left">&nbsp;</div>
+            <div class="left fifty">&nbsp;</div>
 
-            <div class="right">&nbsp;</div>
+            <div class="right whole">&nbsp;</div>
 
+        </div>
+        <div class="fullheight halfandhalf" id="moremore">
+            <div class="left sixty">
+                <div class="image notext"></div>
+            </div>
+
+            <div class="right sixty">
+                <div class="image"></div>
+                <div class="supplement">
+                    <span class="topline">Lorem Ipsum</span><br>
+                    <span class="rest">Dolor sit amet et
+                        cetera et al lorem ipsum dolor sit amet. Dolor sit amet et cetera et al lorem ipsum dolor sit
+                        amet.</span>
+                </div>
+            </div>
+        </div>
+        <div class="fullheight five" id="bernard">
+            <div class="image five-first"></div>
+            <div class="image five-second"></div>
+            <div class="image five-third"></div>
+            <div class="image five-fourth"></div>
+            <div class="image five-fifth"></div>
         </div>
     </div>
 
