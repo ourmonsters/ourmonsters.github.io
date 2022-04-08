@@ -49,6 +49,34 @@
             --body-font: 'Montserrat';
         }
 
+        /* Orientation */
+        @media (orientation: landscape) {
+
+
+            div.portrait {
+                display: none;
+            }
+        }
+
+        @media (orientation: portrait) {
+            div.container {
+                display: none;
+            }
+
+
+        }
+
+        div.portrait {
+            color: white;
+            text-align: center;
+            font-family: 'Open Sans';
+            margin: auto;
+            padding: 50px;
+        }
+
+        div.portrait img {
+            max-width: 50%;
+        }
 
         /* Body */
         html {
@@ -349,6 +377,11 @@
 </head>
 
 <body>
+    <div class="portrait">
+        <img src="rotate.gif">
+        <p>To enjoy this digital lookbook, please turn your phone to landscape.<br>
+            Or, if you're on a PC, make the window wider.</p>
+    </div>
     <div class="container">
         <div class="fullheight" id="header">
             <h1 class="title headline-text">Terrors</h1>
