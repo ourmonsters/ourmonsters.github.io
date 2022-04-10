@@ -42,7 +42,7 @@
         :root {
             --bruce-green: #00FF00;
             --bruce-pink: #FF3CFF;
-            --bruce-yellow: #F6FF00;
+            --bruce-yellow: #FFFF00;
             --lipsum: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum';
             --placeholder-font: 'Flow Block';
             --headline-font: 'Plaster';
@@ -76,6 +76,51 @@
 
         div.portrait img {
             max-width: 50%;
+        }
+
+        /* animation */
+        @keyframes huerot {
+            0% {
+                filter: hue-rotate(0deg);
+            }
+
+            25% {
+                filter: hue-rotate(90deg);
+            }
+
+            50% {
+                filter: hue-rotate(180deg);
+            }
+
+            75% {
+                filter: hue-rotate(270deg);
+            }
+
+            100% {
+                filter: hue-rotate(360deg);
+            }
+        }
+
+        @keyframes huerot-maxcontrast {
+            0% {
+                filter: hue-rotate(0deg) contrast(200%) saturate(200%);
+            }
+
+            25% {
+                filter: hue-rotate(90deg) contrast(200%) saturate(200%);
+            }
+
+            50% {
+                filter: hue-rotate(180deg) contrast(200%) saturate(200%);
+            }
+
+            75% {
+                filter: hue-rotate(270deg) contrast(200%) saturate(200%);
+            }
+
+            100% {
+                filter: hue-rotate(360deg) contrast(200%) saturate(200%);
+            }
         }
 
         /* Body */
@@ -119,6 +164,34 @@
             align-content: center;
             justify-content: center;
             align-items: center;
+        }
+
+        div#header:before {
+            content: "";
+            position: fixed;
+            left: 0;
+            right: 0;
+            z-index: -1;
+
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: block;
+            background-image: url('bts.gif');
+            width: 100%;
+            height: 100%;
+            filter: grayscale(100) blur(5px) brightness(0.2);
+        }
+
+        .logo {
+            max-width: 60%;
+            max-height: 60%;
+            animation: 15s huerot infinite;
+            padding-bottom: 30px;
+        }
+
+        .logo:hover {
+            animation: 1s huerot infinite;
         }
 
         .title {
@@ -213,6 +286,9 @@
         }
 
         /* video */
+        #bts {
+            background-color: black;
+        }
 
         #bts video {
             height: 100vh;
@@ -220,28 +296,7 @@
 
         }
 
-        /* animation */
-        @keyframes huerot {
-            0% {
-                filter: hue-rotate(0deg);
-            }
 
-            25% {
-                filter: hue-rotate(90deg);
-            }
-
-            50% {
-                filter: hue-rotate(180deg);
-            }
-
-            75% {
-                filter: hue-rotate(270deg);
-            }
-
-            100% {
-                filter: hue-rotate(360deg);
-            }
-        }
 
         /*Half and halfs*/
 
@@ -395,7 +450,7 @@
 
         .halfandhalf#huetest .left {
             background-image: url('cathy.jpg');
-            filter: grayscale(100) contrast(2);
+            animation: 15s huerot-maxcontrast infinite;
         }
 
         .halfandhalf#huetest .right {
@@ -411,13 +466,14 @@
 
 <body>
     <div class="portrait">
+        <img src="logo.png" alt="Terrors" class="logo small">
         <img src="rotate.gif">
         <p>To enjoy this digital lookbook, please turn your phone to landscape.<br>
             Or, if you're on a PC, make the window wider.</p>
     </div>
     <div class="container">
         <div class="fullheight" id="header">
-            <h1 class="title headline-text">Terrors</h1>
+            <img src="logo.png" alt="Terrors" class="logo">
             <h2 class="subtitle body-text">A digital lookbook</h2>
             <h3 class="subtitle body-text">Unit X Group 12<br>2022</h3>
 
@@ -519,6 +575,12 @@
         toggleActions: "restart pause resume pause",
         scroller: ".container"
     });
+    gsap.to(".logo", {
+        scrollTrigger: ".logo",
+        opacity: 1,
+        y: -30,
+        duration: 2
+    })
     gsap.to(".title", {
         scrollTrigger: ".title",
         opacity: 1,
