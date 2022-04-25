@@ -501,9 +501,23 @@ div#count {
 
 
 
+#playlist {
+    background-image: url('dark.jpg');
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+}
 
+#playlist .items {
+    padding: 100px;
+}
 
-
+.playlisttext {
+    font-size: 2rem;
+    font-family: 'Open Sans';
+    margin-bottom: 30px;
+}
 
 
 
