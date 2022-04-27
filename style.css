@@ -314,9 +314,9 @@ div#count {
     background-color: black;
 }
 
-#bts video {
+#bts iframe {
     height: 100vh;
-    width: auto;
+    width: 100vw;
 
 }
 
