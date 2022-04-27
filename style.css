@@ -502,7 +502,7 @@ div#count {
 
 
 #playlist {
-    background-image: url('dark.jpg');
+    background: transparent;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -520,10 +520,45 @@ div#count {
 }
 
 
+@keyframes swishy {
+    0% {
+        transform: translate(0px, 0px);
+        filter: grayscale(100) blur(5px) brightness(0.2);
+    }
 
 
 
+    50% {
+        transform: translate(-500px, -500px);
+        filter: grayscale(0) blur(5px) brightness(0.8);
+    }
 
+
+
+    100% {
+        transform: translate(0px, 0px);
+        filter: grayscale(100) blur(5px) brightness(0.2);
+    }
+
+}
+
+
+div#playlist:before {
+    content: "";
+    position: fixed;
+    left: -500px;
+    right: 0;
+    z-index: -1;
+
+    background-position: center;
+    background-size: 220%;
+    background-repeat: no-repeat;
+    display: block;
+    background-image: url('pince.jpg');
+    width: 220%;
+    height: 220%;
+    animation: 60s swishy infinite linear;
+}
 
 
 
@@ -625,12 +660,30 @@ div#count {
 }
 
 
+#revision .left {
+    background-image: url('egg.jpg');
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(1);
+}
+
+#revision .center {
+    background-image: url('egg.jpg');
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(0.5);
+}
 
 
-
-
-
-
+#revision .right {
+    background-image: url('egg.jpg');
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(0);
+}
 
 
 
