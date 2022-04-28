@@ -233,6 +233,7 @@ div#header:before {
     max-width: 60%;
     max-height: 60%;
     animation: 15s huerot-darker infinite;
+    transform: translate(0, 60px);
 }
 
 .logo:hover {
