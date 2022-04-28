@@ -15,16 +15,18 @@
 
 <body>
     <div class="portrait">
-        <img src="logo-new-black.png" alt="Terrors" class="logo small">
+        <img src="new-logo.png" alt="Terrors" class="logo small">
         <img src="rotate.gif">
         <p>To enjoy this digital lookbook, please turn your phone to landscape.<br>
             Or, if you're on a PC, make the window wider.</p>
     </div>
     <div class="container">
         <div class="fullheight" id="header">
-            <img src="logo-new-black.png" alt="Terrors" class="logo">
-            <h2 class="subtitle body-text">A digital lookbook</h2>
-            <h3 class="subtitle body-text">Unit X Group 12<br>2022</h3>
+            <div id="header-container"><img src="logo-new-black.png" alt="Terrors" class="logo">
+                <h2 class="subtitle body-text">A digital lookbook</h2>
+                <h3 class="subtitle body-text">Unit X Group 12<br>2022</h3>
+            </div>
+
 
         </div>
         <div class="fullheight" id="about">
@@ -51,30 +53,9 @@
                     the scene expressed in a chaotic sense with no limitation on the project. 
                 </p>
             </div>
+            <div class="right-image">&nbsp;</div>
         </div>
-        <div class="fullheight" id="count" style="display:none;">
-            <div class="number" id="one">
-                <span class="bignum">1</span>
-                <div class="monsterpic"></div>
-                <div class="monsterinfo"><span class="monstername"></span><span class="monstertopic"></span></div>
-            </div>
-            <div class="number" id="two">
-                <span class="bignum">2</span>
-                <div class="monsterpic"></div>
-            </div>
-            <div class="number" id="three">
-                <span class="bignum">3</span>
-                <div class="monsterpic"></div>
-            </div>
-            <div class="number" id="four">
-                <span class="bignum">4</span>
-                <div class="monsterpic"></div>
-            </div>
-            <div class="number" id="five">
-                <span class="bignum">5</span>
-                <div class="monsterpic"></div>
-            </div>
-        </div>
+
         <div class="fullheight" id="bts">
             <iframe src="https://www.youtube-nocookie.com/embed/1VUbt0flwH8" title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope"
@@ -82,40 +63,8 @@
 
 
         </div>
-        <div class="fullheight halfandhalf" id="tiki">
-            <div class="left fifty">&nbsp;</div>
 
-            <div class="right whole">&nbsp;</div>
 
-        </div>
-        <div class="fullheight halfandhalf" id="moremore">
-            <div class="left sixty">
-                <div class="image notext"></div>
-            </div>
-
-            <div class="right sixty">
-                <div class="image"></div>
-                <div class="supplement">
-                    <span class="topline">Lorem Ipsum</span><br>
-                    <span class="rest">Dolor sit amet et
-                        cetera et al lorem ipsum dolor sit amet. Dolor sit amet et cetera et al lorem ipsum dolor sit
-                        amet.</span>
-                </div>
-            </div>
-        </div>
-        <div class="fullheight five" id="bernard">
-            <div class="image five-first"></div>
-            <div class="image five-second"></div>
-            <div class="image five-third"></div>
-            <div class="image five-fourth"></div>
-            <div class="image five-fifth"></div>
-        </div>
-        <div class="fullheight halfandhalf" id="huetest">
-            <div class="left fifty">&nbsp;</div>
-
-            <div class="right whole">&nbsp;</div>
-
-        </div>
         <div class="container fullheight" id="playlist">
             <span class="playlisttext">Listen to the playlist</span><br>
             <iframe style="border-radius:12px"
@@ -139,7 +88,7 @@
         scroller: ".container"
     });
     gsap.to(".logo", {
-        scrollTrigger: ".logo",
+        scrollTrigger: "html",
         opacity: 1,
         y: -30,
         duration: 2
@@ -162,13 +111,12 @@
         y: -30,
         duration: 2
     })
-    gsap.to(".number", {
-        scrollTrigger: ".number",
+    gsap.to(".right-image", {
+        scrollTrigger: ".content",
         opacity: 1,
         y: -30,
         duration: 2
     })
-
 
 </script>
 
