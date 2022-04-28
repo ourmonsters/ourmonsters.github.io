@@ -127,6 +127,28 @@ div.portrait img {
     }
 }
 
+@keyframes huerot-darker {
+    0% {
+        filter: hue-rotate(0deg) brightness(0.7);
+    }
+
+    25% {
+        filter: hue-rotate(90deg) brightness(0.7);
+    }
+
+    50% {
+        filter: hue-rotate(180deg) brightness(0.7);
+    }
+
+    75% {
+        filter: hue-rotate(270deg) brightness(0.7);
+    }
+
+    100% {
+        filter: hue-rotate(360deg) brightness(0.7);
+    }
+}
+
 
 
 
@@ -210,12 +232,11 @@ div#header:before {
 .logo {
     max-width: 60%;
     max-height: 60%;
-    animation: 15s huerot infinite;
-    padding-bottom: 30px;
+    animation: 15s huerot-darker infinite;
 }
 
 .logo:hover {
-    animation: 1s huerot infinite;
+    animation: 1s huerot-darker infinite;
 }
 
 .title {
