@@ -905,6 +905,36 @@ div#playlist:before {
     left: 10vw;
     width: 50vw;
     height: 20vh;
+    animation: fadeinout 6s infinite;
+}
+
+@keyframes fadeinout {
+    0% {
+        opacity: 100%;
+        filter: none;
+    }
+
+    25% {
+        opacity: 100%;
+        filter: none;
+    }
+
+    50% {
+        opacity: 20%;
+        filter: blur(10px);
+    }
+
+    75% {
+        opacity: 100%;
+        filter: none;
+    }
+
+
+
+    100% {
+        opacity: 100%;
+        filter: none;
+    }
 }
 
 #itd-2 div {
