@@ -11,7 +11,14 @@
     font-display: swap;
 }
 
-
+@font-face {
+    font-family: 'Better Together Eyes';
+    src: url('BetterTogether-Eyes.woff2') format('woff2'),
+        url('BetterTogether-Eyes.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 .placeholder-text {
     font-family: 'Flow Block', cursive;
@@ -266,7 +273,7 @@ div#header-container {
 /* About */
 
 div#about {
-    background-color: var(--bruce-green);
+    background-color: var(--bruce-pink);
     align-content: center;
     align-items: center;
     flex-direction: row;
@@ -276,7 +283,12 @@ div#about {
 
 .content {
     opacity: 0;
-    width: 50%;
+    width: 60%;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 2rem;
+    cursor: default;
+    overflow: hidden;
 }
 
 .right-image {
@@ -287,6 +299,162 @@ div#about {
     background-repeat: no-repeat;
     background-size: contain;
 }
+
+.highlight {
+    font-family: 'Better Together';
+    font-weight: normal;
+    font-size: 2.7rem;
+    transition: 1s;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+
+#scale {
+    display: inline-flex;
+}
+
+#scale:hover {
+    transform: scale(0.2);
+}
+
+#colour:hover {
+    color: var(--bruce-green);
+    animation: huerot 5s infinite;
+}
+
+#monstrous:hover {
+    letter-spacing: 10px;
+}
+
+#bizarre:hover {
+    opacity: 0;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    11% {
+        opacity: 0;
+    }
+
+    19% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#monsters:hover {
+    animation: blink 2s infinite;
+}
+
+#stress:hover {
+    text-decoration: underline white 3px;
+
+}
+
+#stress:hover::after {
+    font-family: 'Open Sans';
+    font-size: 2rem;
+    font-weight: 800;
+    content: " ! ! ! ! ! !";
+}
+
+#consumerism:hover {
+    text-decoration: underline white 3px dotted;
+
+}
+
+#consumerism:hover::before {
+    font-family: 'Open Sans';
+    font-size: 2rem;
+    font-weight: 800;
+    content: "£ ";
+}
+
+#oppression {
+    display: inline-flex;
+    align-items: baseline;
+}
+
+#oppression:hover {
+    display: inline-flex;
+    align-items: baseline;
+    padding: 0;
+    transform: scaleY(.2);
+}
+
+#doubts:hover {
+    text-decoration: underline double white 3px;
+
+}
+
+#doubts:hover::after {
+    font-family: 'Open Sans';
+    font-size: 2rem;
+    font-weight: 800;
+    content: " ? ? ? ? ?";
+}
+
+
+@keyframes leftright {
+    0% {
+        transform: translate(0);
+    }
+
+    30% {
+        transform: translate(-30px);
+        opacity: 0.5;
+    }
+
+    70% {
+        transform: translate(30px);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translate(0px);
+    }
+}
+
+#nosiness:hover {
+    display: inline-flex;
+    animation: leftright 5s infinite;
+}
+
+#looks:hover {
+    font-family: 'Better Together Eyes';
+}
+
+#escape {
+    display: inline-flex;
+}
+
+#escape:hover {
+    transform: translateY(100px);
+    opacity: 0.5;
+}
+
+
+
+
+
+
+
+
 
 div#count {
     background-color: var(--bruce-pink);
