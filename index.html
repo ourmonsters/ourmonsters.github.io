@@ -22,9 +22,10 @@
     </div>
     <div class="container">
         <div class="fullheight" id="header">
-            <div id="header-container"><img src="logo-new-black.png" alt="Terrors" class="logo">
+            <div id="header-container"><img src="new-logo.png" alt="Terrors" class="logo">
                 <h2 class="subtitle body-text">A digital lookbook</h2>
-                <h3 class="subtitle body-text">Unit X Group 12<br>2022</h3>
+                <h3 class="subtitle body-text">Unit X Group 12<br>2022</h3><br><br><br>
+                <img src="arrow.gif" alt="" width="100px" id="arrow" class="subtitle">
             </div>
 
 
@@ -78,40 +79,72 @@
 
 
         </div>
+        <section id="ssu">
+            <div class="fullheight thirtyfortythirty" id="ssu-1">
+                <div class="left"></div>
+                <div class="center"></div>
+                <div class="right">
+                    <div class="sectionlogo"></div>
+                </div>
 
-        <div class="fullheight thirtyfortythirty" id="ssu-1">
-            <div class="left"></div>
-            <div class="center"></div>
-            <div class="right">
+            </div>
+            <div class="fullheight fortysixty" id="ssu-2">
+                <div class="left whole"></div>
+                <div class="right twoimages"><img src="IMG_8348.JPG" alt=""><img src="IMG_8345.JPG" alt=""></div>
+            </div>
+            <div class="fullheight fortysixty" id="ssu-3">
+                <div class="left whole"></div>
+                <div class="right"><img src="8321-word.png" alt=""></div>
+            </div>
+        </section>
+        <section id="itd">
+            <div class="fullheight hero" id="itd-1">
                 <div class="sectionlogo"></div>
             </div>
+            <div class="fullheight thirds" id="itd-2">
+                <div class="left"></div>
+                <div class="center"></div>
+                <div class="right"></div>
+            </div>
+            <div class="fullheight one" id="itd-3"></div>
 
-        </div>
-        <div class="fullheight fortysixty" id="ssu-2">
-            <div class="left whole"></div>
-            <div class="right twoimages"><img src="IMG_8348.JPG" alt=""><img src="IMG_8345.JPG" alt=""></div>
-        </div>
-        <div class="fullheight fortysixty" id="ssu-3">
-            <div class="left whole"></div>
-            <div class="right"><img src="8321-word.png" alt=""></div>
-        </div>
-
-        <div class="fullheight hero" id="itd-1">
-            <div class="sectionlogo"></div>
-        </div>
-        <div class="fullheight thirds" id="itd-2">
-            <div class="left"></div>
-            <div class="center"></div>
-            <div class="right"></div>
-        </div>
-        <div class="fullheight one" id="itd-3"></div>
-
-
-
-
-
-
-
+            <div class="fullheight halfandhalf" id="itd-4">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+        </section>
+        <section id="em">
+            <div class="fullheight thirds" id="em-1">
+                <div class="left"></div>
+                <div class="center"><img src="em-logo-left.png" alt="" height="20%"></div>
+                <div class="right"><img src="em-logo-right.png" alt="" height="20%"></div>
+            </div>
+            <div class="fullheight halfandhalf" id="em-2">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="fullheight" id="em-3"></div>
+            <div class="fullheight halfandhalf" id="em-4">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+        </section>
+        <section id="hna">
+            <div class="fullheight fortytwentyforty" id="hna-1">
+                <div class="left"></div>
+                <div class="center"><img src="hna-logo.png"></div>
+                <div class="right"></div>
+            </div>
+            <div class="fullheight halfandhalf" id="hna-2">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="fullheight thirds" id="hna-3">
+                <div class="left"></div>
+                <div class="center"></div>
+                <div class="right"></div>
+            </div>
+        </section>
 
 
         <div class="container fullheight" id="playlist">
@@ -151,6 +184,12 @@
     gsap.to(".subtitle", {
         scrollTrigger: ".subtitle",
         opacity: 1,
+        y: -30,
+        duration: 2
+    })
+    gsap.to("#arrow", {
+        scrollTrigger: ".subtitle",
+        opacity: .5,
         y: -30,
         duration: 2
     })

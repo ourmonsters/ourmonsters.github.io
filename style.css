@@ -182,7 +182,6 @@ html {
 }
 
 body {
-
     overflow: hidden;
     background-color: black;
     color: white;
@@ -268,6 +267,11 @@ div#header-container {
 .subtitle {
     opacity: 0;
     text-align: center;
+}
+
+#arrow {
+    opacity: 0;
+    animation: huerot 2s infinite;
 }
 
 /* About */
@@ -786,6 +790,38 @@ div.thirtyfortythirty {
     background-repeat: no-repeat;
 }
 
+/* 40 20 40 */
+div.fortytwentyforty {
+    background-color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 0px !important;
+    margin: 0px 0px !important;
+    width: 100%;
+    height: 100%;
+}
+
+.fortytwentyforty .left,
+.fortytwentyforty .center,
+.fortytwentyforty .right {
+    height: 100vh;
+    background-size: cover;
+}
+
+.fortytwentyforty .left,
+.fortytwentyforty .right {
+    width: 40vw;
+
+
+}
+
+.fortytwentyforty .center {
+    width: 20vw;
+}
+
 /* playlist */
 
 #playlist {
@@ -1060,6 +1096,22 @@ div#playlist:before {
     max-width: 60%;
 }
 
+#ssu {
+    cursor: url('egg-cursor.png'), auto;
+}
+
+#itd {
+    cursor: url('pincer-cursor.png'), auto;
+}
+
+#em {
+    cursor: url('box-cursor.png'), auto;
+}
+
+#hna {
+    cursor: url('grafitti-cursor.png'), auto;
+}
+
 #itd-1 {
     background-image: url('IMG_8488.png');
     background-size: cover;
@@ -1111,6 +1163,10 @@ div#playlist:before {
     background-position: center;
 }
 
+#itd-2 div:hover {
+    background-image: url('IMG_8396_closed.JPG');
+}
+
 #itd-2 .left {
     filter: hue-rotate(180deg);
 }
@@ -1125,11 +1181,149 @@ div#playlist:before {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+
 }
 
+#itd-3:hover {
+    cursor: url('pincer-cursor.png'), url('pincer.cur'), auto;
+}
 
+#itd-4 .left {
+    background-image: url('IMG_8454_field.jpg');
+    background-size: auto 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
+#itd-4 .right {
+    background-image: url('IMG_8467.png');
+    background-size: auto 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
+#em-1 div {
+    background-size: auto 65%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#em-1 .left {
+    background-image: url('IMG_8535.JPG');
+}
+
+#em-1 .center {
+    background-image: url('IMG_8536.JPG');
+}
+
+#em-1 .right {
+    background-image: url('IMG_8537.JPG');
+}
+
+#em-1 div img {
+    max-height: 150px;
+    padding-bottom: 20vh;
+}
+
+#em-2 .left {
+    background-image: url('IMG_8564.JPG');
+    background-size: auto 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+#em-2 .right {
+    background-image: url('IMG_8565.JPG');
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+#em-3 {
+    background-color: white;
+    background-image: url('IMG_8526.JPG');
+    background-size: auto 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#em-4 .left {
+    background-image: url('IMG_8622.JPG');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#em-4 .right {
+    background-image: url('IMG_8617.JPG');
+    background-size: auto 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#hna-1 .left {
+    background-image: url('IMG_8667.JPG');
+    background-size: auto 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#hna-1 .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hna-1 .center img {
+    width: 80%;
+    height: fit-content;
+}
+
+#hna-1 .right {
+    background-image: url('IMG_8666.JPG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#hna-2 .left {
+    background-image: url('IMG_8657.JPG');
+    background-size: auto 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#hna-2 .right {
+    background-image: url('IMG_8661.JPG');
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+#hna-3 .left {
+    background-image: url('IMG_8625.JPG');
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+#hna-3 .center {
+    background-image: url('IMG_8627.JPG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#hna-3 .right {
+    background-image: url('IMG_8634.JPG');
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+}
 
 /* scrollbar */
 ::-webkit-scrollbar {
