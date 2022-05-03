@@ -84,7 +84,7 @@
                 <div class="left"></div>
                 <div class="center"></div>
                 <div class="right">
-                    <div class="sectionlogo"></div>
+                    <div class="sectionlogo" id="ssu-logo"></div>
                 </div>
 
             </div>
@@ -99,7 +99,7 @@
         </section>
         <section id="itd">
             <div class="fullheight hero" id="itd-1">
-                <div class="sectionlogo"></div>
+                <div class="sectionlogo" id="itd-logo"></div>
             </div>
             <div class="fullheight thirds" id="itd-2">
                 <div class="left"></div>
@@ -116,8 +116,10 @@
         <section id="em">
             <div class="fullheight thirds" id="em-1">
                 <div class="left"></div>
-                <div class="center"><img src="em-logo-left.png" alt="" height="20%"></div>
-                <div class="right"><img src="em-logo-right.png" alt="" height="20%"></div>
+                <div class="center"><img src="em-logo-left.png" alt="" height="20%" class="sectionlogo"
+                        id="em-logo-left"></div>
+                <div class="right"><img src="em-logo-right.png" alt="" height="20%" class="sectionlogo"
+                        id="em-logo-right"></div>
             </div>
             <div class="fullheight halfandhalf" id="em-2">
                 <div class="left"></div>
@@ -132,7 +134,7 @@
         <section id="hna">
             <div class="fullheight fortytwentyforty" id="hna-1">
                 <div class="left"></div>
-                <div class="center"><img src="hna-logo.png"></div>
+                <div class="center"><img src="hna-logo-white.png" class="sectionlogo" id="hna-logo"></div>
                 <div class="right"></div>
             </div>
             <div class="fullheight halfandhalf" id="hna-2">
@@ -205,7 +207,31 @@
         y: -30,
         duration: 2
     })
-
+    gsap.to("#ssu-logo", {
+        scrollTrigger: "#ssu-logo",
+        opacity: 1,
+        duration: 2
+    })
+    gsap.to("#itd-logo", {
+        scrollTrigger: "#itd-logo",
+        opacity: 1,
+        duration: 2
+    })
+    gsap.to("#em-logo-left", {
+        scrollTrigger: "#em-logo-left",
+        opacity: 1,
+        duration: 2
+    })
+    gsap.to("#em-logo-right", {
+        scrollTrigger: "#em-logo-right",
+        opacity: 1,
+        duration: 2
+    })
+    gsap.to("#hna-logo", {
+        scrollTrigger: "#hna-logo",
+        opacity: 1,
+        duration: 2
+    })
 </script>
 
 </html>

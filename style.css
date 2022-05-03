@@ -291,7 +291,6 @@ div#about {
     font-family: 'Open Sans';
     font-weight: 700;
     font-size: 2rem;
-    cursor: default;
     overflow: hidden;
 }
 
@@ -539,6 +538,9 @@ div#count {
 }
 
 
+.sectionlogo {
+    opacity: 0;
+}
 
 /*Half and halfs*/
 
@@ -1096,6 +1098,8 @@ div#playlist:before {
     max-width: 60%;
 }
 
+/* cursors */
+/*
 #ssu {
     cursor: url('egg-cursor.png'), auto;
 }
@@ -1111,6 +1115,13 @@ div#playlist:before {
 #hna {
     cursor: url('grafitti-cursor.png'), auto;
 }
+*/
+html {
+    cursor: url('white-pincer-small.png'), auto;
+}
+
+
+
 
 #itd-1 {
     background-image: url('IMG_8488.png');
@@ -1184,9 +1195,6 @@ div#playlist:before {
 
 }
 
-#itd-3:hover {
-    cursor: url('pincer-cursor.png'), url('pincer.cur'), auto;
-}
 
 #itd-4 .left {
     background-image: url('IMG_8454_field.jpg');
@@ -1200,6 +1208,10 @@ div#playlist:before {
     background-size: auto 60%;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+#em-1 {
+    background-color: var(--bruce-yellow);
 }
 
 #em-1 div {
@@ -1270,6 +1282,10 @@ div#playlist:before {
     background-size: auto 90%;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+#hna-1 {
+    background-color: var(--bruce-pink);
 }
 
 #hna-1 .center {
