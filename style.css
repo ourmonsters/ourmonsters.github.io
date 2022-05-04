@@ -33,6 +33,8 @@
 .body-text {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
+    letter-spacing: 110%;
+
 }
 
 /* Colours and lipsum */
@@ -179,6 +181,7 @@ div.portrait img {
 /* Body */
 html {
     overflow: hidden;
+    letter-spacing: 500 !important;
 }
 
 body {
@@ -292,6 +295,7 @@ div#about {
     font-weight: 700;
     font-size: 1.8rem;
     overflow: hidden;
+    letter-spacing: 1px;
 }
 
 .right-image {
