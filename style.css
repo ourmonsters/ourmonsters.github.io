@@ -252,7 +252,7 @@ div#header-container {
     max-width: 60%;
     max-height: 60%;
     animation: 5s huerot infinite;
-    transform: translate(0, 60px);
+    transform: translate(0, 30px);
 }
 
 .logo:hover {
@@ -290,7 +290,7 @@ div#about {
     width: 60%;
     font-family: 'Open Sans';
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 1.8rem;
     overflow: hidden;
 }
 
@@ -306,7 +306,7 @@ div#about {
 .highlight {
     font-family: 'Better Together';
     font-weight: normal;
-    font-size: 2.7rem;
+    font-size: 2.5rem;
     transition: 1s;
     overflow: hidden;
     white-space: nowrap;
