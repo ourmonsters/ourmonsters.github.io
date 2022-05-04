@@ -1,6 +1,6 @@
 /* Fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 @font-face {
     font-family: 'Better Together';
@@ -31,7 +31,7 @@
 }
 
 .body-text {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
 }
 
@@ -67,7 +67,7 @@
 div.portrait {
     color: white;
     text-align: center;
-    font-family: 'Open Sans';
+    font-family: 'Montserrat';
     margin: auto;
     padding: 50px;
 }
@@ -288,7 +288,7 @@ div#about {
 .content {
     opacity: 0;
     width: 60%;
-    font-family: 'Open Sans';
+    font-family: 'Montserrat';
     font-weight: 700;
     font-size: 1.8rem;
     overflow: hidden;
@@ -370,7 +370,7 @@ div#about {
 }
 
 #stress:hover::after {
-    font-family: 'Open Sans';
+    font-family: 'Montserrat';
     font-size: 2rem;
     font-weight: 800;
     content: " ! ! ! ! ! !";
@@ -382,7 +382,7 @@ div#about {
 }
 
 #consumerism:hover::before {
-    font-family: 'Open Sans';
+    font-family: 'Montserrat';
     font-size: 2rem;
     font-weight: 800;
     content: "£ ";
@@ -406,7 +406,7 @@ div#about {
 }
 
 #doubts:hover::after {
-    font-family: 'Open Sans';
+    font-family: 'Montserrat';
     font-size: 2rem;
     font-weight: 800;
     content: " ? ? ? ? ?";
@@ -596,7 +596,7 @@ div#count {
     color: black;
     z-index: 4;
     text-align: right;
-    font-family: 'Open Sans';
+    font-family: 'Montserrat';
 }
 
 .sixty .supplement {
@@ -840,7 +840,7 @@ div.fortytwentyforty {
 
 .playlisttext {
     font-size: 2rem;
-    font-family: 'Open Sans';
+    font-family: 'Montserrat';
     margin-bottom: 30px;
 }
 
@@ -1339,6 +1339,19 @@ html {
     background-size: cover;
     background-position: left;
     background-repeat: no-repeat;
+}
+
+#hna-3 div {
+    filter: saturate(0.7) brightness(1.5);
+    transition: 1s;
+}
+
+#hna-3 div:hover {
+    filter: saturate(1) brightness(1);
+}
+
+#finale {
+    background-image: url()
 }
 
 /* scrollbar */
