@@ -17,7 +17,7 @@
         url('BetterTogether-Eyes.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
+    font-display: block;
 }
 
 .placeholder-text {
@@ -456,6 +456,8 @@ div#about {
     display: inline-flex;
     animation: leftright 5s infinite;
 }
+
+
 
 #looks:hover {
     font-family: 'Better Together Eyes';
@@ -1230,7 +1232,10 @@ html {
 }
 
 #em-1 {
-    background-color: var(--bruce-yellow);
+    background-image: url('skirt.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 #em-1 div {
@@ -1304,7 +1309,7 @@ html {
 }
 
 #hna-1 {
-    background-color: var(--bruce-pink);
+    background-color: var(--bruce-yellow);
 }
 
 #hna-1 .center {
@@ -1369,9 +1374,7 @@ html {
     filter: saturate(1) brightness(1);
 }
 
-#finale {
-    background-image: url()
-}
+
 
 /* scrollbar */
 ::-webkit-scrollbar {
@@ -1391,4 +1394,65 @@ html {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #666666;
+}
+
+@media screen and (max-height:500px) {
+    .logo {
+        max-height: 50vh;
+        max-width: 50vw;
+        padding-top: 10vh;
+    }
+
+    .header {
+        justify-content: center;
+    }
+
+    .fullheight {
+        justify-content: center;
+    }
+
+    .subtitle {
+        margin: 0 !important;
+        font-size: 0.8rem;
+    }
+
+    #arrow {
+        display: none;
+    }
+
+    #about .content {
+        width: 90vw;
+        font-size: 1rem;
+    }
+
+    .highlight {
+        font-size: 1.1rem;
+    }
+
+    #em-logo-left,
+    #em-logo-right {
+        height: 15vh;
+    }
+
+    /* scrollbar */
+    ::-webkit-scrollbar {
+        width: unset;
+    }
+
+
+    ::-webkit-scrollbar-track {
+        background: unset;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: unset;
+        border-radius: unset;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: unset;
+    }
+
+
 }
