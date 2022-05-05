@@ -219,7 +219,7 @@ div#header {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url('bts.gif');
+    background-image: url('bts-new.gif');
     padding: 0;
     margin: 0;
     padding: 0;
@@ -260,7 +260,7 @@ div#header-container {
 }
 
 .logo:hover {
-    animation: 1s huerot-darker infinite;
+    animation: 1s huerot infinite;
 }
 
 .title {
@@ -271,6 +271,10 @@ div#header-container {
 .subtitle {
     opacity: 0;
     text-align: center;
+    backdrop-filter: blur(20px);
+    padding: 15px;
+    border-radius: 100px;
+    text-transform: uppercase;
 }
 
 #arrow {
@@ -281,7 +285,10 @@ div#header-container {
 /* About */
 
 div#about {
-    background-color: var(--bruce-pink);
+    background-image: url('skirt.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     align-content: center;
     align-items: center;
     flex-direction: row;
@@ -369,29 +376,38 @@ div#about {
     animation: blink 2s infinite;
 }
 
-#stress:hover {
-    text-decoration: underline white 3px;
+#stress {
+    display: inline-flex;
+}
+
+#stress:hover #stress-1,
+#stress:hover #stress-3,
+#stress:hover #stress-5 {
+    transform: translateY(30px);
 
 }
 
-#stress:hover::after {
-    font-family: 'Montserrat';
-    font-size: 2rem;
-    font-weight: 800;
-    content: " ! ! ! ! ! !";
+#stress:hover #stress-2,
+#stress:hover #stress-4,
+#stress:hover #stress-6 {
+    transform: translateY(-30px);
+
+}
+
+
+#consumerism {
+    display: inline-flex;
+    transition: 1s;
 }
 
 #consumerism:hover {
-    text-decoration: underline white 3px dotted;
+    transform: scale(2000%);
+    opacity: 0;
+    transition: 3s;
 
 }
 
-#consumerism:hover::before {
-    font-family: 'Montserrat';
-    font-size: 2rem;
-    font-weight: 800;
-    content: "£ ";
-}
+
 
 #oppression {
     display: inline-flex;
@@ -405,16 +421,14 @@ div#about {
     transform: scaleY(.2);
 }
 
-#doubts:hover {
-    text-decoration: underline double white 3px;
-
+#doubts {
+    display: inline-flex;
+    transition: 2s;
 }
 
-#doubts:hover::after {
-    font-family: 'Montserrat';
-    font-size: 2rem;
-    font-weight: 800;
-    content: " ? ? ? ? ?";
+#doubts:hover {
+    transform: scale(20%) rotate(360deg);
+
 }
 
 
