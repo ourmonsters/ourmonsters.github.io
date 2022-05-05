@@ -1310,6 +1310,9 @@ html {
 
 #hna-1 {
     background-color: var(--bruce-yellow);
+    background-image: url('IMG_8666.JPG');
+    background-blend-mode: luminosity;
+    background-size: cover;
 }
 
 #hna-1 .center {
@@ -1374,6 +1377,13 @@ html {
     filter: saturate(1) brightness(1);
 }
 
+#finale {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 30px;
+}
 
 
 /* scrollbar */
