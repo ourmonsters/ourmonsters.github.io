@@ -219,7 +219,7 @@ div#header {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url('bts.gif');
+    background-image: url('slow.gif');
     padding: 0;
     margin: 0;
 }
@@ -230,7 +230,7 @@ div#header-container {
     align-content: center;
     justify-content: center;
     align-items: center;
-    backdrop-filter: grayscale(100) blur(5px) brightness(0.2);
+    /* backdrop-filter: grayscale(100) blur(5px) brightness(0.2); */
 }
 
 /* div#header:before {
