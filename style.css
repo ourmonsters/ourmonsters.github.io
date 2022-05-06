@@ -231,6 +231,7 @@ div#header-container {
     align-content: center;
     justify-content: center;
     align-items: center;
+    width: 100%;
     /* backdrop-filter: grayscale(100) blur(5px) brightness(0.2);  */
 }
 
