@@ -72,6 +72,7 @@ div.portrait {
     font-family: 'Montserrat';
     margin: auto;
     padding: 50px;
+
 }
 
 div.portrait img {
@@ -79,7 +80,19 @@ div.portrait img {
 }
 
 
+div.insta-wrapper {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    border-radius: 4px;
+    padding: 4px;
+    margin: 0;
+}
 
+div.insta {
+    background: black;
+    border-radius: 4px;
+    height: 100%;
+    padding: 10px;
+}
 
 
 
